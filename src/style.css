@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Yusei Magic", sans-serif;
+}
+
+:root {
+    --light-yellow:rgb(255, 222, 115);
+    --orange-yellow: rgb(236, 164, 59);
+    --dark-yellow: rgb(255, 198, 11);
+}
+
+html {
+    background-image: url(https://web.archive.org/web/20221024061038im_/https://eckben.github.io/bearysBreakfastBar/img/643.png);
+}
+
+.decorations {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+}
+
+.hive {
+    top:200px;
+    width: 80px;
+    left: 360px;
+    overflow-x: clip;
+    overflow-y: clip;
+}
+
+.bee-right {
+    right: 30px;
+    transform: rotate(90deg);
+    top: 30px;
+}
+
+.bee-left {
+    left: 30px;
+    bottom: 30px;
+}
+
+#content {
+    background-color: var(--light-yellow);
+    width:800px;
+    margin: auto;
+    margin-top:30px;
+    text-align: center;
+    padding:50px;
+    position: relative;
+}
+
+#content > div {
+    position: relative;
+    width:710px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(193, 106, 8);
+    padding: 10px;
+    clip-path: polygon( 0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6% );
+}
+
+#content > div > div {
+    clip-path: polygon( 0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6% );
+    background-color: var(--dark-yellow);
+    height: fit-content;
+}
+
+#content > div:not(:first-child) {
+    margin-bottom: 20px;
+    width: 450px;
+    padding:20px;
+    clip-path: polygon(0px 20%, 10% 0px, 90% 0px, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0px 80%);
+}
+
+#content > div:not(:first-child) > div {
+    padding:30px;
+    clip-path: polygon(0px 20%, 10% 0px, 90% 0px, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0px 80%);
+    
+}
+
+.section-title {
+    display: block;
+    text-align: start;
+    font-size:24px;
+    margin-left: 20px;
+}
+
+
+.author{
+    display: block;
+    font-weight: 900;
+    text-align: start;
+    font-size:20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.title > h1 {
+    font-size: 45px;
+}
+
+.title-container {
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap:20px;
+    height: 100px;
+}
+
+
+nav button {
+    height: 50px;
+    width:120px;
+    border: 0.6px solid black;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom: 0px;
+    font-weight:550;
+    font-size:18px;
+    position: relative;
+}
+
+.drip {
+    position: absolute;
+    top: 48px;
+    right:-2px;
+    width:137px;
+    fill:  var(--orange-yellow);
+    opacity: 0;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:  var(--orange-yellow);
+}
+
+.drip-highlight{
+  fill: rgba(255,255,255,.85);
+  scale:1.8;
+}
+
+nav,
+nav button {
+    background-color:  var(--light-yellow);
+}
+
+
+
